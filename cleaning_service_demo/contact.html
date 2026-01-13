@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>お問い合わせ - クリアホーム</title>
+	<meta name="description" content="クリアホームへのお問い合わせはこちら。Web予約なら24時間受付中。面倒な見積もり訪問なしで、簡単にご予約いただけます。">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Outfit:wght@500;700&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js" defer></script>
+</head>
+
+<body>
+	<header class="header">
+		<div class="header-inner">
+			<h1 class="logo">
+				<a href="index.html"><span class="logo-icon">✨</span>ClearHome</a>
+			</h1>
+			<nav class="nav">
+				<ul class="nav-list">
+					<li><a href="about.html">選ばれる理由</a></li>
+					<li><a href="service.html">メニュー</a></li>
+					<li><a href="flow.html">ご利用の流れ</a></li>
+					<li><a href="flow.html#faq">よくある質問</a></li>
+					<li><a href="contact.html" class="active">お問い合わせ</a></li>
+				</ul>
+			</nav>
+			<div class="header-cta">
+				<a href="contact.html" class="btn btn-primary">
+					<span class="btn-sub">お見積り無料</span>
+					Web予約・お問い合わせ
+				</a>
+			</div>
+			<button class="menu-toggle" aria-label="メニューを開く">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+		</div>
+	</header>
+
+	<main>
+		<section class="page-header section bg-primary-light">
+			<div class="container text-center">
+				<h2 class="section-title mb-0">Web予約・お問い合わせ</h2>
+				<p>24時間365日受付中。最短3分で入力完了。</p>
+			</div>
+		</section>
+
+		<section class="section">
+			<div class="container narrow-container">
+
+				<div class="contact-methods text-center mb-lg">
+					<div class="contact-tel">
+						<p class="tel-label">お電話でのご予約・ご相談</p>
+						<a href="tel:0120-000-000" class="tel-number"
+							style="color: var(--color-primary); text-decoration: none;">0120-000-000</a>
+						<p class="tel-time">受付時間 9:00〜18:00 (年中無休)</p>
+					</div>
+				</div>
+
+				<form class="contact-form shadow-md"
+					style="background-color: var(--color-bg-gray); padding: 40px; border-radius: var(--radius-lg);">
+					<div class="form-group">
+						<label for="name">お名前 <span class="required">必須</span></label>
+						<input type="text" id="name" name="name" placeholder="例：山田 花子" required
+							style="background: white;">
+					</div>
+					<div class="form-group">
+						<label for="email">メールアドレス <span class="required">必須</span></label>
+						<input type="email" id="email" name="email" placeholder="例：hanako@example.com" required
+							style="background: white;">
+					</div>
+					<div class="form-group">
+						<label for="tel">お電話番号 <span class="required">必須</span></label>
+						<input type="tel" id="tel" name="tel" placeholder="例：090-1234-5678" required
+							style="background: white;">
+					</div>
+					<div class="form-group">
+						<label for="menu">ご希望のメニュー <span class="required">必須</span></label>
+						<select id="menu" name="menu" required style="background: white;">
+							<option value="">選択してください</option>
+							<option value="ac">エアコンクリーニング</option>
+							<option value="kitchen">キッチン・レンジフード</option>
+							<option value="bath">浴室クリーニング</option>
+							<option value="set">お得な水回りセット</option>
+							<option value="other">その他</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="date">ご希望の日時 (第一希望)</label>
+						<input type="datetime-local" id="date" name="date" style="background: white;">
+						<p style="font-size: 0.8rem; color: #666; margin-top: 5px;">※3日後以降の日付をご選択ください</p>
+					</div>
+					<div class="form-group">
+						<label for="message">ご質問・ご要望</label>
+						<textarea id="message" name="message" rows="5" placeholder="ご希望の日時（第二・第三希望）や、気になる汚れについてご記入ください"
+							style="background: white;"></textarea>
+					</div>
+					<div class="form-submit">
+						<button type="submit" class="btn btn-lg btn-primary">送信内容を確認する</button>
+					</div>
+				</form>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-top">
+				<div class="footer-brand">
+					<div class="logo font-lg">✨ClearHome</div>
+					<p>プロの技で、お家も空気もリフレッシュ。</p>
+				</div>
+				<div class="footer-links">
+					<ul class="footer-nav">
+						<li><a href="about.html">会社概要</a></li>
+						<li><a href="#">特定商取引法に基づく表記</a></li>
+						<li><a href="#">プライバシーポリシー</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer-bottom text-center">
+				<p>&copy; 2026 ClearHome. All Rights Reserved.</p>
+				<p class="demo-notice">※これはポートフォリオ用のデモサイトです。実際のサービスではありません。</p>
+			</div>
+		</div>
+	</footer>
+</body>
+
+</html>

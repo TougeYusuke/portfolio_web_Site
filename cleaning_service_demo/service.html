@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>サービスメニュー - クリアホーム</title>
+	<meta name="description" content="クリアホームのハウスクリーニングメニューと料金一覧。エアコン、キッチン、浴室など、明朗会計で安心のサービスをご提供します。">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Outfit:wght@500;700&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js" defer></script>
+</head>
+
+<body>
+	<header class="header">
+		<div class="header-inner">
+			<h1 class="logo">
+				<a href="index.html"><span class="logo-icon">✨</span>ClearHome</a>
+			</h1>
+			<nav class="nav">
+				<ul class="nav-list">
+					<li><a href="about.html">選ばれる理由</a></li>
+					<li><a href="service.html" class="active">メニュー</a></li>
+					<li><a href="flow.html">ご利用の流れ</a></li>
+					<li><a href="flow.html#faq">よくある質問</a></li>
+					<li><a href="contact.html">お問い合わせ</a></li>
+				</ul>
+			</nav>
+			<div class="header-cta">
+				<a href="contact.html" class="btn btn-primary">
+					<span class="btn-sub">お見積り無料</span>
+					Web予約・お問い合わせ
+				</a>
+			</div>
+			<button class="menu-toggle" aria-label="メニューを開く">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+		</div>
+	</header>
+
+	<main>
+		<section class="page-header section bg-primary-light">
+			<div class="container text-center">
+				<h2 class="section-title mb-0">サービスメニュー・料金</h2>
+				<p>汚れ具合による追加料金なし。安心の明朗会計です。</p>
+			</div>
+		</section>
+
+		<section class="section">
+			<div class="container">
+				<!-- Air Conditioner -->
+				<div id="ac" class="menu-block">
+					<h3 class="menu-category-title"><span class="icon">❄️</span> エアコンクリーニング</h3>
+					<div class="menu-content">
+						<div class="menu-img">
+							<img src="images/service_ac.png" alt="エアコンクリーニング">
+						</div>
+						<div class="menu-details">
+							<p class="mb-md">内部に溜まったカビやホコリを高圧洗浄機で徹底的に洗い流します。効きが良くなり、電気代の節約にも繋がります。</p>
+							<table class="price-table">
+								<tr>
+									<th>壁掛けタイプ（お掃除機能なし）</th>
+									<td class="price">11,000<span class="unit">円 / 台</span></td>
+								</tr>
+								<tr>
+									<th>壁掛けタイプ（お掃除機能付き）</th>
+									<td class="price">16,000<span class="unit">円 / 台</span></td>
+								</tr>
+								<tr>
+									<th>天井埋め込みタイプ</th>
+									<td class="price">25,000<span class="unit">円 / 台</span></td>
+								</tr>
+							</table>
+							<div class="option-box">
+								<h4>オプション</h4>
+								<ul>
+									<li>防カビ抗菌コート：<strong>無料</strong></li>
+									<li>室外機洗浄：+3,000円 / 台</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Kitchen -->
+				<div id="kitchen" class="menu-block mt-lg">
+					<h3 class="menu-category-title"><span class="icon">🍳</span> キッチン・レンジフード</h3>
+					<div class="menu-content reverse">
+						<div class="menu-img">
+							<img src="images/service_kitchen.png" alt="キッチンクリーニング">
+						</div>
+						<div class="menu-details">
+							<p class="mb-md">頑固な油汚れや焦げ付き、シンクの水垢まで、プロの洗剤と技術でピカピカに仕上げます。</p>
+							<table class="price-table">
+								<tr>
+									<th>レンジフード（換気扇）</th>
+									<td class="price">14,300<span class="unit">円 / 台</span></td>
+								</tr>
+								<tr>
+									<th>キッチン本体</th>
+									<td class="price">16,500<span class="unit">円 / 式</span></td>
+								</tr>
+								<tr>
+									<th>キッチン + レンジフードセット</th>
+									<td class="price highlight">28,000<span class="unit">円 / セット</span></td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+
+				<!-- Bath -->
+				<div id="bath" class="menu-block mt-lg">
+					<h3 class="menu-category-title"><span class="icon">🛁</span> 浴室・水回り</h3>
+					<div class="menu-content">
+						<div class="menu-img">
+							<img src="images/service_bath.png" alt="浴室クリーニング">
+						</div>
+						<div class="menu-details">
+							<p class="mb-md">天井のカビ、鏡のウロコ、排水溝のヌメリなど、普段のお掃除では落としきれない汚れを一掃します。</p>
+							<table class="price-table">
+								<tr>
+									<th>浴室クリーニング一式</th>
+									<td class="price">15,400<span class="unit">円 / 式</span></td>
+								</tr>
+								<tr>
+									<th>洗面所クリーニング</th>
+									<td class="price">8,800<span class="unit">円 / 式</span></td>
+								</tr>
+								<tr>
+									<th>トイレクリーニング</th>
+									<td class="price">8,800<span class="unit">円 / 式</span></td>
+								</tr>
+								<tr>
+									<th>水回り3点セット（浴室+洗面+トイレ）</th>
+									<td class="price highlight">29,800<span class="unit">円 / セット</span></td>
+								</tr>
+							</table>
+							<div class="option-box">
+								<h4>オプション</h4>
+								<ul>
+									<li>鏡のウロコ取り：<strong>無料</strong></li>
+									<li>エプロン内部高圧洗浄：+3,000円</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="text-center mt-lg">
+					<a href="contact.html" class="btn btn-lg btn-primary">このメニューで予約する</a>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-top">
+				<div class="footer-brand">
+					<div class="logo font-lg">✨ClearHome</div>
+					<p>プロの技で、お家も空気もリフレッシュ。</p>
+				</div>
+				<div class="footer-links">
+					<ul class="footer-nav">
+						<li><a href="about.html">会社概要</a></li>
+						<li><a href="#">特定商取引法に基づく表記</a></li>
+						<li><a href="#">プライバシーポリシー</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer-bottom text-center">
+				<p>&copy; 2026 ClearHome. All Rights Reserved.</p>
+				<p class="demo-notice">※これはポートフォリオ用のデモサイトです。実際のサービスではありません。</p>
+			</div>
+		</div>
+	</footer>
+</body>
+
+</html>
