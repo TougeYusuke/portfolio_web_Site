@@ -454,6 +454,28 @@ body.sub-page .footer {
 }
 
 @media (max-width: 768px) {
+
+	/* Fix: Allow body scroll on mobile */
+	body {
+		overflow: auto;
+	}
+
+	.main-container {
+		height: auto;
+		scroll-snap-type: none;
+		overflow-y: visible;
+	}
+
+	.section {
+		height: auto;
+		min-height: 100vh;
+		scroll-snap-align: none;
+		overflow: visible;
+		padding-top: 100px;
+		/* More space for header */
+		padding-bottom: 4rem;
+	}
+
 	.header {
 		padding: 0 1.5rem;
 	}
