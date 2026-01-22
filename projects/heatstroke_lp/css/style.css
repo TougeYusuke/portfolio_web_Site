@@ -404,32 +404,130 @@ body.sub-page .footer {
 	z-index: 100;
 }
 
-/* Responsive */
+/* Responsive & Hamburger Menu */
+.header__toggle {
+	display: none;
+	cursor: pointer;
+	z-index: 200;
+}
+
+.hamburger {
+	width: 30px;
+	height: 3px;
+	background-color: var(--primary-color);
+	position: relative;
+	transition: all 0.3s ease;
+}
+
+.hamburger::before,
+.hamburger::after {
+	content: '';
+	width: 30px;
+	height: 3px;
+	background-color: var(--primary-color);
+	position: absolute;
+	left: 0;
+	transition: all 0.3s ease;
+}
+
+.hamburger::before {
+	top: -10px;
+}
+
+.hamburger::after {
+	top: 10px;
+}
+
+/* Active State for Hamburger */
+.header.nav-open .hamburger {
+	background-color: transparent;
+}
+
+.header.nav-open .hamburger::before {
+	transform: rotate(45deg);
+	top: 0;
+}
+
+.header.nav-open .hamburger::after {
+	transform: rotate(-45deg);
+	top: 0;
+}
+
 @media (max-width: 768px) {
 	.header {
-		padding: 0 1rem;
+		padding: 0 1.5rem;
+	}
+
+	.header__toggle {
+		display: block;
 	}
 
 	.header__nav {
-		display: none;
-		/* Todo: Hamburger */
+		position: fixed;
+		top: 0;
+		right: -100%;
+		width: 80%;
+		height: 100vh;
+		background-color: rgba(255, 255, 255, 0.98);
+		padding: 6rem 2rem;
+		transition: right 0.4s ease;
+		box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+	}
+
+	.header.nav-open .header__nav {
+		right: 0;
+	}
+
+	.header__nav ul {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 2.5rem;
+	}
+
+	.header__nav a {
+		font-size: 1.2rem;
 	}
 
 	.mv__title {
 		font-size: 2.5rem;
 	}
 
+	.mv__subtitle {
+		font-size: 1rem;
+	}
+
 	.section__title {
-		font-size: 2rem;
+		font-size: 1.8rem;
+	}
+
+	/* Problem Section Mobile */
+	.problem-container {
+		flex-direction: column;
+		gap: 2rem;
+	}
+
+	.problem__text,
+	.problem__visual {
+		max-width: 100%;
+	}
+
+	.problem__list {
+		flex-direction: column;
+		/* Stack icons */
+		gap: 2rem;
+	}
+
+	/* Solution Section Mobile */
+	.solution__desc {
+		font-size: 1rem;
 	}
 
 	.column-grid {
 		grid-template-columns: 1fr;
 	}
 
-	.problem__list {
-		flex-direction: column;
-		gap: 2rem;
-		align-items: center;
+	.section {
+		padding: 1rem;
+		/* Less padding on mobile */
 	}
 }

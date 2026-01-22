@@ -41,6 +41,23 @@ document.addEventListener('DOMContentLoaded', () => {
 		});
 	});
 
-	// Mobile Menu Toggle (To be implemented with Hamburger)
+	// Mobile Menu Toggle
+	const toggle = document.querySelector('.header__toggle');
+	const header = document.querySelector('.header');
+
+	if (toggle) {
+		toggle.addEventListener('click', () => {
+			header.classList.toggle('nav-open');
+		});
+	}
+
+	// Close menu when a link is clicked
+	const links = document.querySelectorAll('.header__nav a');
+	links.forEach(link => {
+		link.addEventListener('click', () => {
+			header.classList.remove('nav-open');
+		});
+	});
+
 	console.log('App initialized');
 });
